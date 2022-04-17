@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.main.ept.Beginner">
+   <children>
+      <ImageView fitHeight="492.0" fitWidth="739.0" layoutX="-25.0" layoutY="14.0">
+         <image>
+            <Image url="@MainScene.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="74.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Touch on element for more information" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Console" size="27.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="101.0" layoutY="100.0" prefHeight="214.0" prefWidth="60.0" stylesheets="@CSSButtons.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="H" mnemonicParsing="false" style="-fx-background-radius: 0;" text="Button" />
+            <Button fx:id="Li" mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
+            <Button fx:id="Na" mnemonicParsing="false" text="Button" GridPane.rowIndex="2" />
+            <Button fx:id="Be" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="Mg" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="K" mnemonicParsing="false" text="Button" GridPane.rowIndex="3" />
+            <Button fx:id="Ca" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="Sc" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="Sr" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="Rb" mnemonicParsing="false" text="Button" GridPane.rowIndex="4" />
+            <Button fx:id="Cs" mnemonicParsing="false" text="Button" GridPane.rowIndex="5" />
+            <Button fx:id="Ba" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="Fr" mnemonicParsing="false" text="Button" GridPane.rowIndex="6" />
+            <Button fx:id="Ra" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="Y" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="Ti" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="Zr" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="V" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="Db" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Button fx:id="Cr" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="Sg" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Button fx:id="Mn" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Button fx:id="Hf" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="Rf" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button fx:id="Bh" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Button fx:id="Fe" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Button fx:id="Hs" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Button fx:id="He" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" />
+            <Button fx:id="F" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+            <Button fx:id="O" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+            <Button fx:id="N" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+            <Button fx:id="C" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+            <Button fx:id="B" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+            <Button fx:id="Al" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+            <Button fx:id="Co" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Button fx:id="Ni" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Button fx:id="Cu" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+            <Button fx:id="Zn" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+            <Button fx:id="Ne" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+            <Button fx:id="Ar" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="2" />
+            <Button fx:id="Kr" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="3" />
+            <Button fx:id="Xe" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="4" />
+            <Button fx:id="Rn" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="5" />
+            <Button fx:id="Og" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="6" />
+            <Button fx:id="Mt" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Button fx:id="Ds" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Button fx:id="Rg" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+            <Button fx:id="Cn" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+            <Button fx:id="Nh" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="6" />
+            <Button fx:id="Fl" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+            <Button fx:id="Mc" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="6" />
+            <Button fx:id="Lv" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="6" />
+            <Button fx:id="Ts" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="6" />
+            <Button fx:id="Nb" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="Mo" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button fx:id="Tc" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Button fx:id="Ru" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Button fx:id="Rh" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Button fx:id="Cl" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="2" />
+            <Button fx:id="Si" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+            <Button fx:id="S" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+            <Button fx:id="P" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+            <Button fx:id="Ga" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="3" />
+            <Button fx:id="Br" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="3" />
+            <Button fx:id="Ge" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+            <Button fx:id="Se" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="3" />
+            <Button fx:id="As" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+            <Button fx:id="Ta" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button fx:id="W" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Button fx:id="Re" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Button fx:id="Os" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Button fx:id="Ir" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Button fx:id="I" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="4" />
+            <Button fx:id="At" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="5" />
+            <Button fx:id="Te" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="4" />
+            <Button fx:id="Po" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+            <Button fx:id="Sb" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+            <Button fx:id="Bi" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+            <Button fx:id="Sn" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+            <Button fx:id="Pb" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+            <Button fx:id="In" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="4" />
+            <Button fx:id="Tl" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+            <Button fx:id="Cd" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+            <Button fx:id="Hg" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+            <Button fx:id="Ag" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+            <Button fx:id="Pd" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Button fx:id="Pt" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Button fx:id="Au" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="191.0" layoutY="344.0" prefHeight="59.0" prefWidth="455.0" style="visibility: true;" stylesheets="@CSSButtons.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="La" mnemonicParsing="false" text="Button" />
+            <Button fx:id="Ce" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" />
+            <Button fx:id="Pr" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
+            <Button fx:id="Nd" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" />
+            <Button fx:id="Pm" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" />
+            <Button fx:id="Sm" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" />
+            <Button fx:id="Eu" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" />
+            <Button fx:id="Gd" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" />
+            <Button fx:id="Tb" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" />
+            <Button fx:id="Ac" mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
+            <Button fx:id="Th" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="Pa" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="U" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="Np" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="Pu" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="Am" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="Cm" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="Bk" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button fx:id="Cf" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button fx:id="Dy" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" />
+            <Button fx:id="Ho" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" />
+            <Button fx:id="Es" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <Button fx:id="Fm" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+            <Button fx:id="Md" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+            <Button fx:id="No" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+            <Button fx:id="Lr" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+            <Button fx:id="Lu" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" />
+            <Button fx:id="Yb" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" />
+            <Button fx:id="Tm" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" />
+            <Button fx:id="Er" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
