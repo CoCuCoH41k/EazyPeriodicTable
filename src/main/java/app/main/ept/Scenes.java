@@ -7,16 +7,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 public class Scenes {
-    public static void H() throws IOException {
+
+    public static void Load(String Element) throws IOException {
         Stage stage = new Stage();
-        FXMLLoader SceneLoader = new FXMLLoader(SceneLoader.class.getResource("H_Scene.fxml"));
-        Scene H = new Scene(SceneLoader.load());
-        stage.setTitle("EPT H");
-        stage.setScene(H);
+        stage.setResizable(true);
         stage.getIcons().add(new Image("file:Icon.png"));
-        stage.setResizable(false);
+        String WhatToLoad = Element + "_Scene.fxml";
+        FXMLLoader SceneLoader = new FXMLLoader(SceneLoader.class.getResource(WhatToLoad));
+        Scene Window = new Scene(SceneLoader.load());
+        stage.setTitle("EPT H");stage.setScene(Window);
         stage.show();
-
     }
-
 }
