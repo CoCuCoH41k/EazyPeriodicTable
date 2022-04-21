@@ -15,7 +15,7 @@ public class Scenes {
         String WhatToLoad = Element + "_Scene.fxml";
         FXMLLoader SceneLoader = new FXMLLoader(SceneLoader.class.getResource(WhatToLoad));
         Scene Window = new Scene(SceneLoader.load());
-        stage.setTitle("EPT H");stage.setScene(Window);
+        stage.setTitle("EPT Element: " + Element);stage.setScene(Window);
         stage.show();
     }
 }
