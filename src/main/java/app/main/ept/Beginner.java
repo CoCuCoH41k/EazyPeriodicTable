@@ -1,12 +1,8 @@
 package app.main.ept;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-
 import java.io.IOException;
-
-
 public class Beginner {
-
     @FXML
     private Button // Periodic Table
     H,                                                                  He,
@@ -19,12 +15,9 @@ public class Beginner {
 
                 La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu,
                 Ac, Th, Pa, U , Np, Pu, Am, Cm, Bk, Cf, Es, Fm, Md, No, Lr;
-
-
     @FXML
     private void initialize(){
         H.setOnAction(actionEvent -> {
-
             String Element = H.getId();
             try {Scenes.Load(Element);} catch (IOException e) {e.printStackTrace();}
         });

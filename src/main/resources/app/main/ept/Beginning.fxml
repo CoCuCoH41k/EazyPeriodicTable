@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.main.ept.Beginner">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" stylesheets="@TextFont.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.main.ept.Beginner">
    <children>
-      <ImageView fitHeight="492.0" fitWidth="739.0" layoutX="-25.0" layoutY="14.0">
-         <image>
-            <Image url="@MainScene.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="74.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Touch on element for more information" textAlignment="CENTER">
-         <font>
-            <Font name="Lucida Console" size="27.0" />
-         </font>
-      </Text>
-      <GridPane layoutX="101.0" layoutY="100.0" prefHeight="214.0" prefWidth="60.0" stylesheets="@CSSButtons.css">
+      <GridPane layoutX="86.0" layoutY="83.0" stylesheets="@TextFont.css">
         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
@@ -44,6 +35,7 @@
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -51,152 +43,546 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="H" mnemonicParsing="false" style="-fx-background-radius: 0;" text="Button" />
-            <Button fx:id="Li" mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
-            <Button fx:id="Na" mnemonicParsing="false" text="Button" GridPane.rowIndex="2" />
-            <Button fx:id="Be" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="Mg" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="K" mnemonicParsing="false" text="Button" GridPane.rowIndex="3" />
-            <Button fx:id="Ca" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button fx:id="Sc" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="Sr" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button fx:id="Rb" mnemonicParsing="false" text="Button" GridPane.rowIndex="4" />
-            <Button fx:id="Cs" mnemonicParsing="false" text="Button" GridPane.rowIndex="5" />
-            <Button fx:id="Ba" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Button fx:id="Fr" mnemonicParsing="false" text="Button" GridPane.rowIndex="6" />
-            <Button fx:id="Ra" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button fx:id="Y" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button fx:id="Ti" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button fx:id="Zr" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button fx:id="V" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button fx:id="Db" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button fx:id="Cr" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Button fx:id="Sg" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <Button fx:id="Mn" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Button fx:id="Hf" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Button fx:id="Rf" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button fx:id="Bh" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-            <Button fx:id="Fe" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Button fx:id="Hs" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-            <Button fx:id="He" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" />
-            <Button fx:id="F" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="1" />
-            <Button fx:id="O" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="1" />
-            <Button fx:id="N" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="1" />
-            <Button fx:id="C" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="1" />
-            <Button fx:id="B" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="1" />
-            <Button fx:id="Al" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="2" />
-            <Button fx:id="Co" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-            <Button fx:id="Ni" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-            <Button fx:id="Cu" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="3" />
-            <Button fx:id="Zn" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="3" />
-            <Button fx:id="Ne" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="1" />
-            <Button fx:id="Ar" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="2" />
-            <Button fx:id="Kr" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="3" />
-            <Button fx:id="Xe" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="4" />
-            <Button fx:id="Rn" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="5" />
-            <Button fx:id="Og" mnemonicParsing="false" text="Button" GridPane.columnIndex="17" GridPane.rowIndex="6" />
-            <Button fx:id="Mt" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-            <Button fx:id="Ds" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="6" />
-            <Button fx:id="Rg" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="6" />
-            <Button fx:id="Cn" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="6" />
-            <Button fx:id="Nh" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="6" />
-            <Button fx:id="Fl" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="6" />
-            <Button fx:id="Mc" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="6" />
-            <Button fx:id="Lv" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="6" />
-            <Button fx:id="Ts" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="6" />
-            <Button fx:id="Nb" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button fx:id="Mo" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Button fx:id="Tc" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <Button fx:id="Ru" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <Button fx:id="Rh" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-            <Button fx:id="Cl" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="2" />
-            <Button fx:id="Si" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="2" />
-            <Button fx:id="S" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="2" />
-            <Button fx:id="P" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="2" />
-            <Button fx:id="Ga" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="3" />
-            <Button fx:id="Br" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="3" />
-            <Button fx:id="Ge" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="3" />
-            <Button fx:id="Se" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="3" />
-            <Button fx:id="As" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="3" />
-            <Button fx:id="Ta" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button fx:id="W" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <Button fx:id="Re" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <Button fx:id="Os" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <Button fx:id="Ir" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-            <Button fx:id="I" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="4" />
-            <Button fx:id="At" mnemonicParsing="false" text="Button" GridPane.columnIndex="16" GridPane.rowIndex="5" />
-            <Button fx:id="Te" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="4" />
-            <Button fx:id="Po" mnemonicParsing="false" text="Button" GridPane.columnIndex="15" GridPane.rowIndex="5" />
-            <Button fx:id="Sb" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="4" />
-            <Button fx:id="Bi" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="5" />
-            <Button fx:id="Sn" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="4" />
-            <Button fx:id="Pb" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="5" />
-            <Button fx:id="In" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="4" />
-            <Button fx:id="Tl" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="5" />
-            <Button fx:id="Cd" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="4" />
-            <Button fx:id="Hg" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="5" />
-            <Button fx:id="Ag" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="4" />
-            <Button fx:id="Pd" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-            <Button fx:id="Pt" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="5" />
-            <Button fx:id="Au" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+            <Button fx:id="H" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="H" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Li" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSRedButton.css" text="Li" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Na" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSRedButton.css" text="Na" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Be" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Be" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Mg" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Mg" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="K" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSRedButton.css" text="K" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ca" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Ca" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Sc" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Sc" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Sr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Sr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Rb" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSRedButton.css" text="Rb" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cs" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSRedButton.css" text="Cs" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ba" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Ba" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Fr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSRedButton.css" text="Fr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ra" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Ra" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Y" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Y" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ti" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ti" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Zr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Zr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="V" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="V" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Db" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Db" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Cr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Sg" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Sg" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Mn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Mn" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Hf" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Hf" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Rf" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Rf" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Bh" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Bh" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Fe" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Fe" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="8" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Hs" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Hs" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="8" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="He" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="He" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="F" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="F" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="O" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="O" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="N" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="N" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="C" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="C" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="B" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="B" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Al" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Al" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Co" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Co" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="9" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ni" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ni" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="10" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cu" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Cu" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="11" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Zn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Zn" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="12" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ne" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="Ne" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ar" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="Ar" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Kr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="Kr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Xe" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="Xe" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Rn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="Rn" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Og" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSCyanButton.css" text="Og" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Mt" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Mt" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="9" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ds" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ds" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="10" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Rg" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Rg" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="11" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Cn" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="12" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Nh" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Nh" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Fl" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Fl" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Mc" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Mc" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Lv" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Lv" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ts" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Ts" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Nb" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Nb" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Mo" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Mo" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Tc" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Tc" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ru" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ru" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="8" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Rh" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Rh" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="9" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cl" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Cl" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Si" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="Si" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="S" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="S" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="P" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="P" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ga" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Ga" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Br" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="Br" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ge" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="Ge" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Se" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGreenButton.css" text="Se" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="As" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="As" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ta" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ta" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="W" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="W" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Re" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Re" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Os" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Os" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="8" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ir" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ir" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="9" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="I" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="I" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="At" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowButton.css" text="At" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Te" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="Te" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Po" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="Po" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Sb" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSYellowGrayButton.css" text="Sb" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Bi" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Bi" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Sn" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Sn" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pb" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Pb" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="In" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="In" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Tl" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSGrayButton.css" text="Tl" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cd" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Cd" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="12" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Hg" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Hg" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="12" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ag" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ag" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="11" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pd" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Pd" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="10" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pt" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Pt" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="10" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Au" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Au" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="11" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="La" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="La" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ac" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ac" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ce" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ce" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="5" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Th" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Th" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="5" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Pr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="6" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pa" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Pa" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="6" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Nd" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Nd" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="7" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="U" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="U" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="7" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pm" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Pm" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="8" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Np" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Np" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="8" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Sm" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Sm" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="9" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Pu" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Pu" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="9" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Eu" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Eu" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="10" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Am" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Am" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Gd" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Gd" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="11" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cm" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Cm" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="11" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Tb" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Tb" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="12" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Bk" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Bk" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="12" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Dy" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Dy" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Cf" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Cf" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="13" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Ho" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Ho" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Es" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Es" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="14" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Er" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Er" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Fm" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Fm" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="15" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Tm" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Tm" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Md" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Md" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="16" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Yb" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Yb" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="No" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="No" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="17" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Lu" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Lu" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Button fx:id="Lr" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@CSSPinkButton.css" text="Lr" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" GridPane.columnIndex="18" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font></Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="1">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="2">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="3" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="3">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="4" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="4">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="5" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="5">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="6" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="6">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="7" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.rowIndex="7">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="1" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="1">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="2" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="3" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="4" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="5" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="5">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="6" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="6">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="7" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="7">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="8" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="8">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="9" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="9">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="10" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="10">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="11" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="11">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="12" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="12">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="13" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="13">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="14" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="14">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="15" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="15">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="16" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="16">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="17" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="17">
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="18" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="18">
+            </Label>
+            <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="110.0" text="Лантаноиды" textAlignment="CENTER" textOverrun="CLIP" GridPane.rowIndex="9">
+            </Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="110.0" text="Актиноиды" GridPane.rowIndex="10">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
          </children>
       </GridPane>
-      <GridPane layoutX="191.0" layoutY="344.0" prefHeight="59.0" prefWidth="455.0" style="visibility: true;" stylesheets="@CSSButtons.css">
-        <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Button fx:id="La" mnemonicParsing="false" text="Button" />
-            <Button fx:id="Ce" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" />
-            <Button fx:id="Pr" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
-            <Button fx:id="Nd" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" />
-            <Button fx:id="Pm" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" />
-            <Button fx:id="Sm" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" />
-            <Button fx:id="Eu" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" />
-            <Button fx:id="Gd" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" />
-            <Button fx:id="Tb" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" />
-            <Button fx:id="Ac" mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
-            <Button fx:id="Th" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="Pa" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="U" mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="Np" mnemonicParsing="false" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="Pu" mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Button fx:id="Am" mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Button fx:id="Cm" mnemonicParsing="false" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Button fx:id="Bk" mnemonicParsing="false" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Button fx:id="Cf" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Button fx:id="Dy" mnemonicParsing="false" text="Button" GridPane.columnIndex="9" />
-            <Button fx:id="Ho" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" />
-            <Button fx:id="Es" mnemonicParsing="false" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="1" />
-            <Button fx:id="Fm" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="1" />
-            <Button fx:id="Md" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" GridPane.rowIndex="1" />
-            <Button fx:id="No" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" GridPane.rowIndex="1" />
-            <Button fx:id="Lr" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" GridPane.rowIndex="1" />
-            <Button fx:id="Lu" mnemonicParsing="false" text="Button" GridPane.columnIndex="14" />
-            <Button fx:id="Yb" mnemonicParsing="false" text="Button" GridPane.columnIndex="13" />
-            <Button fx:id="Tm" mnemonicParsing="false" text="Button" GridPane.columnIndex="12" />
-            <Button fx:id="Er" mnemonicParsing="false" text="Button" GridPane.columnIndex="11" />
-         </children>
-      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="14.0" stylesheets="@TextFont.css" text="Нажмите на элемент для получения подробной информации" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Hyperlink fx:id="Help" layoutX="315.0" layoutY="462.0" text="Нехватет чего либо?" />
    </children>
 </AnchorPane>
