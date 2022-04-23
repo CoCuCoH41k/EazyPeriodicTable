@@ -9,7 +9,7 @@ public class Scenes {
         Stage stage = new Stage();
         stage.setResizable(true);
         stage.getIcons().add(new Image("file:Icon.png"));
-        String WhatToLoad = Element + "_Scene.fxml";
+        String WhatToLoad = "Fxml Files/" + Element + "_Scene.fxml";
         FXMLLoader SceneLoader = new FXMLLoader(SceneLoader.class.getResource(WhatToLoad));
         Scene Window = new Scene(SceneLoader.load());
         stage.setTitle("EPT Element: " + Element);stage.setScene(Window);

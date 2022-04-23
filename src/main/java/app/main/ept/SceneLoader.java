@@ -8,7 +8,7 @@ import java.io.IOException;
 public class SceneLoader extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SceneLoader.class.getResource("Beginning.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SceneLoader.class.getResource("Fxml Files/Beginning.fxml"));
         Scene scene = new Scene(fxmlLoader.load()); stage.setTitle("EPT"); stage.setScene(scene); stage.getIcons().add(new Image("file:Icon.png")); stage.setResizable(false);
         stage.show();
     }
