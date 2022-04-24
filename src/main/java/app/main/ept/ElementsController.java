@@ -1,23 +1,15 @@
 package app.main.ept;
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-
 import java.net.URL;
-import java.util.Iterator;
 import java.util.ResourceBundle;
-
 public class ElementsController implements Initializable {
-    String ID = "H";
-
     @FXML
     private Label AtomMass, Pos, Desc, Name;
-
     @FXML
     private AnchorPane FuckingAnchor;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }

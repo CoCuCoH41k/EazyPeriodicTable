@@ -14,9 +14,6 @@ public class SceneLoader extends Application {
         stage.setScene(scene);
         stage.getIcons().add(new Image("file:Icon.png")); stage.setResizable(false);
         stage.show();
-
-
-
     }
     public static void main(String[] args) {
         launch();

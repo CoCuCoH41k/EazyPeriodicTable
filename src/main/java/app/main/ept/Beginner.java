@@ -8,11 +8,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 public class Beginner {
     private String ElementName;private String ElementDesc;private Float ElementMass;private Integer ElementPos;
-    private void SecondStageShow(String FickingName, Integer FuckingPos, Float FuckingMass, String Desc) throws IOException{
+    private void SecondStageShow(String ThisName, Integer ThisPosition, Float ThisAtomMass, String ThisDescription) throws IOException{
         FXMLLoader SecLoader = new FXMLLoader(getClass().getResource("Element.fxml"));
         Parent ROOT = SecLoader.load();
         ElementsController Controller = SecLoader.getController();
-        Controller.ChangeInformation(FickingName, FuckingPos, FuckingMass, Desc);
+        Controller.ChangeInformation(ThisName, ThisPosition, ThisAtomMass, ThisDescription);
         Stage Stage = new Stage();
         Stage.setScene(new Scene(ROOT));
         Stage.show();
