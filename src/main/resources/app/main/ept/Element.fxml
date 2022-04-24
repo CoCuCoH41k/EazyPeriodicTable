@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="FuckingAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" styleClass="pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.main.ept.ElementsController">
+   <children>
+      <Label fx:id="Name" layoutX="15.0" layoutY="15.0" text="ELEment">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="Pos" layoutX="15.0" layoutY="60.0" text="Label" />
+      <Label fx:id="AtomMass" layoutX="15.0" layoutY="80.0" text="Label" />
+      <Label fx:id="Desc" alignment="TOP_LEFT" layoutX="15.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="470.0" text="Label" textAlignment="JUSTIFY" />
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
